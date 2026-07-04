@@ -1,5 +1,6 @@
 # Homework 1 Template: Getting Started with Your Assistant
 
+# Part 1
 # Create a file named assistant.py and use it to complete the following tasks
 # TODO: Greet the user
 # TODO: Ask for their name, age, and if they are a student
@@ -10,3 +11,8 @@
 
 # Example:
 # name = input("What is your name? ")
+
+# Part 2
+# TODO: Ask how the user's day is and use if/elif/else statements to give the user feedback based on their response.
+# TODO: Ask for 5 hobbies and store them in a list
+# TODO: Show hobbies using slicing (e.g., hobbies[:2])
