@@ -20,3 +20,11 @@
 # TODO: Use int() to cast input to make numbers usable
 # TODO: Use if statements to make sure the correct output is achieved
 
+n1 = int(input("Type a number: "))
+n2 = int(input("Type another number: "))
+operation = input("Would you like to add, subtract, multiply, divide, or power? ")
+if operation == "add":
+    print(n1,"+",n2,"=",n1+n2)
+elif operation == "power":
+    print(n1,"^",n2,"=",n1**n2)
+
