@@ -5,32 +5,28 @@
 # TODO: add two people to the list, Jeremy and Jackson, with append, extend and insert
 
 people = ["James", "Jackie", "Jason", "Jason"]
-# people.append(2)
-# people.append("Jackson")
 
 # print(people)
+
 new_list = ["Jeremy", "Jackson"]
 
-# people.extend(new_list)
 # print(people)
 
 
 # TODO: Now remove James from the list with pop() and remove() and print it
-# people.pop(3) # USES INDEX
-# people.remove("James") # USES VALUE
+
 # print(people)
 
 
 # TODO: Class exercise: add zero to the start of the list
 
 # ls = [1,2,3,4]
-# ls.insert(0,0)
-# ls.insert(3, 2.5)
-# # [0,1,2,2.5,3,4]
-# ls.pop(3)
+
 # print(ls)
 
-# TODO: Remove all people from the 
+# TODO: Remove all numbers from the list
+
+# print(ls)
 
 
 # ALIASING WARNING
@@ -47,6 +43,9 @@ new_list = ["Jeremy", "Jackson"]
 
 # print(new_fruit)
 # print(fruit)
+
+# Creating a clone of a list:
+# new_list = fruits[:] # Creates a copy of eveery element in fruits, and assigns it to new_list
 
 
 # LIST OPERATION
@@ -114,7 +113,6 @@ Jackson Coll, 30
 # ]
 
 # TODO: Use sort() to sort the list alphabetically by last name
-
 # print(names)
 
 ####################################################
@@ -158,7 +156,6 @@ groceries = {
 }
 
 # print(groceries["candy corn"])
-
 
 
 ####################################################
@@ -205,7 +202,6 @@ while <boolean expression is true>:
 
 # while True:
 #     print(":)")
-
 
 # print("hi")
 # print("hi")
