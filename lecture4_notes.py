@@ -1,151 +1,97 @@
-
-
-# number = 0
-# while number < 10:
-#     print(number)
-#     number += 1
-
-
-# print(5 % 3)
-
-# x = 0
-# while True:
-#     if x % 2 == 0:
-#         x += 1 # x becomes 1
-#         continue
-
-#     print(x)
-
-#     # x += 1
-#     if x > 10:
-#         break
-
-
-# x = 0
-# while x <= 10:
-
-#     print("I'm stuck")
-#     x += 1
-
-
-
 ####################################################
-# For Loops                                        #
+# Loop Controls                                    #
 ####################################################
 
-# my_list = [1,2,3,4,5,6]
+# TODO: Make a for loop that terminates when it encounters a negative number.
 
-# for number in my_list:
-#     print(number)
-
-# ind = 0
-# while ind < len(my_list):
-#     print(my_list[ind])
-
-#     ind += 1
-
-
-
-# TODO: Make a for loop that modifies this list to add five to each element in it.
-
-# numbers = [1,2,3,4,5,6]  # [6,7,8,9,10,11]
-# new_numbers = []
+# numbers = [12, 8, 3, -4, 9, 15]
 
 # for number in numbers:
-#     new_numbers.append(number + 5)
-#     # numbers.remove(number)
-#     # print(numbers)
-#     # number += 5
-#     # list(number + 5)
-#     # print(number)
 
-# print(new_numbers)
-
-
-# return the sum of all number in a list
-
-# my_numbers = [3,4234,432,2,3,4,3,443,4234]
-# sum = 0
-
-# for number in my_numbers:
-    # print(number)
-    # sum = sum + number
-    # sum += number
-    # break continue
-    # print(sum)
-
-
-# print(sum)
-
-
-#Lists can take up multiple lines if needed
-my_list = [
-    "Hello",0,23,67854,"world",57485,
-    "Nice",56,-1,"to",-1,-78697495,"meet",
-    "you",75847
-]
-
-#this loop prints out only strings
-# for item in my_list:
-#     if isinstance(item,int): #skip integers
-#         continue
-#     print(item)
-
-
-
-# item = 5
-
-# print(isinstance(56,str))
-
-# print(type(56.43))
-# print(isinstance(56.43,int))
-
-
-
-
-
-
-
-# TODO: Make a for loop that prints the numbers 1 through 10
-# string[0:5:2]
-
-# range(0, 5, 1)
-# [0,1,2,3,4]
-
-# my_list = [
-#     "Hello",0,23,67854,"world",57485,
-#     "Nice",56,-1,"to",-1,-78697495,"meet",
-#     "you",75847
-# ]
-
-# for i in range(0,len(my_list)):
-#     print(i, my_list[i])
-
-
-
-# for i in range(0,100):
-#     if i % 2 == 1:
-#         continue
-#     if i >= 20:
+#     if number < 0:
 #         break
 
-    # print(i)
+#     print(number)
 
+# TODO: Write a while loop that accepts the user's name as input and terminates when they say to quit.
 
+# while True:
+#     name = input("Enter your name (or 'quit'): ")
 
+#     if name.lower() == "quit":
+#         break
 
-# TODO: Write this in a while loop format
+#     print("Hello", name)
 
+# TODO: Write a for loop that prints only the even numbers from 1-20.
+# for number in range(1, 21):
 
-# TODO: Use the provided for loop and the continue keyword, print every other number using
-#       up until the number 20
+#     if number % 2 != 0:
+#         continue
 
-# for i in range(100):
+#     print(number)
 
+# TODO: Write a for loop that skips the "O" in the word "PYTHON" and prints all the other letters.
+# word = "PYTHON"
 
-# TODO: Do the same thing just by calling range and using a different step
+# for letter in word:
 
+#     if letter == "O":
+#         continue
 
+#     print(letter)
+
+# TODO: Write a for loop that prints numbers from 0-4 and uses the pass keyword if the number = 3.
+# for number in range(5):
+
+#     if number == 3:
+#         pass
+
+#     print(number)
+
+####################################################
+# For Loops - Range                                        #
+####################################################
+
+# TODO: Write a for loop that prints every other number from 2-10 (inclusive)
+
+# for i in range(2, 11, 2):
+#     print(i)
+
+# TODO: Write a for loop that prints every third number from 15-0 (inclusive)
+# for i in range(15, -1, -3):
+#     print(i)
+
+# TODO: Write a for loop that checks a range of 100 numbers and prints only even numbers < 20
+# Work with a partner :) Hint, use the continue and break keywords to accomplish this
+
+# for i in range(0,100):
+#     if i % 2 == 1: #if the number is odd skip it
+#         continue
+#     if i >= 20: #if the number >= 20, terminate
+#         break
+
+#     print(i)
+
+####################################################
+# Looping Through Strings                          #
+####################################################
+
+# TODO: Write a for loop that checks each character in the message variable provided and 
+# replaces all the special characters with a space
+
+message = "Welcome@to#Python!Programming$101"
+
+clean_message = ""
+
+# for letter in message:
+
+#     if letter in "@#!$":
+#         clean_message += " "
+#     else:
+#         clean_message += letter
+
+# print(clean_message)
 
 ####################################################
 # Functions                                        #
@@ -275,15 +221,15 @@ my_list = [
 # Predict output for different scope examples.
 
 # x = "universe"
-# print("Main sees:", x) #1
+# print("Main sees:", x) 
 
 # def outer():
 #     def inner():
 #         x = 5
-#         print("Inner sees:", x) #3
+#         print("Inner sees:", x)
 #         def even_inner():
 #             x = 5
-#             print("Inner sees:", x) #3
+#             print("Even Inner sees:", x)
 #     print("Outer sees:", x) #2
 #     inner()
 
