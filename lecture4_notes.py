@@ -141,10 +141,6 @@ clean_message = ""
 ## Exercises:
 # Write a function that returns the square of a number.
 
-# def square(number):
-#     return number * number
-
-# print(square(5))
 
 # def stop_at_five(count):
 #     for num in range (count):
@@ -162,11 +158,7 @@ clean_message = ""
 
 # Write a function that returns True if a number is even, False otherwise.
 
-# def is_even(number):
-#     if number > 10:
-#         return True
-#     else:
-#         return False
+
 
 # for i in range(5):
 #     num = int(input("Enter a number: "))
@@ -191,11 +183,6 @@ clean_message = ""
 # Write a function that returns either the minimum, maximum or the average of a list of numbers
 # numberList = [2,5,9,13,15]
 
-# def numberStatistics(num_list, operation):
-#     if operation == "min":
-#         return min(num_list)
-#     elif operation == "max":
-#         return max(num_list)
 
 # print(numberStatistics(numberList, "max"))
 
@@ -234,55 +221,3 @@ clean_message = ""
 #     inner()
 
 # outer()
-
-####################################################
-# Debugging                                        #
-####################################################
-
-## Key Concepts:
-# - Common errors (NameError, TypeError)
-# - try/except blocks
-# - print-debugging
-
-## Code Demo:
-# try:
-#     val = int(input("Enter number: "))
-#     print("Value is:", val)
-# except ValueError:
-#     print("Invalid input!")
-
-## Exercises:
-# Fix broken code snippets with bugs.
-
-## Tips for Teaching:
-# Encourage students to debug before asking for help.
-
-
-
-####################################################
-# Modules                                          #
-####################################################
-
-## Key Concepts:
-# - import keyword
-# - Using functions from modules
-# - Popular modules: math, random, os
-
-## Code Demo:
-# import random
-# print(random.randint(1, 10))
-import math
-
-
-
-## Exercises:
-# Use math module to compute square root.
-# Use random module to build a simple dice roller.
-
-# Pair Programming Project:
-## Task:
-# Build a number guessing game using:
-# - Functions for game logic
-# - random module
-# - input/output
-# - try/except for error handling
