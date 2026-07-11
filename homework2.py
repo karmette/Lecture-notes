@@ -1,14 +1,17 @@
-# Homework 2 Template: Smart Responses & Storing Info
+# Homework 2: Dictionaries, Tuples, Loops
 
-# TODO: Ask how the user's day is and respond using if/elif/else
-# TODO: Ask for 3 hobbies and store them in a list
-# TODO: Show hobbies using slicing (e.g., hobbies[:2])
+# TODO: Ask 3 users to enter their first name, last name and a hobby and store the info in a dictionary called user_profile
+# TODO: Ask the 3 users to enter their city and country and store the location as a tuple (city, country)
 
-# SUPPLEMENTARY; OPTIONAL
-# TODO: Store all info in a dictionary called user_profile
-# TODO: Store location as a tuple (city, country)
 
-# Example:
-# hobbies = []
-# hobbies.append(input("Enter a hobby: "))
-# ...
+# TODO: Create a loop with the following options below. Use input() to get the user's choices and add a while loop and if/elif blocks to handle options
+# 1. Add Profile
+# 2. Add Hobby
+# 3. View Profile
+# 4. Edit Profile
+# 5. Exit
+
+# Hint 3: You need to add a profile first before you can view/edit a profile or add a hobby
+#       You will need some kind of data structure outside your loop to hold information
+
+# Hint 2: Use a built-in python function that will enable user inputs to be accepted even if they use upper case or lower case
