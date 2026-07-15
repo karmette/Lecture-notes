@@ -262,5 +262,19 @@ def roll_dice():
 
 print("Dice roll:", roll_dice())
 
-## Tips for Teaching:
-# Reinforce module reuse for simplifying code.
+# TODO: Create a number guessing game, where the computer picks a number and the user guesses.
+# The user can try again until they get it, and tell the user if they were too high or too low.
+# Count the number of tries it took for the user to do it!
+
+
+# TODO: Create a program that calculates four options:
+# Area of circle (given radius)
+# Circumference (given radius)
+# Hypotenuse of right triangle (given length of two legs)
+# Square root (given any integer)
+# Create a function for every operation!
+
+
+# TODO: Your turn!
+# Create a program that picks a random integer between 1-20
+# And use that number as the radius of a circle and calculate the area!
