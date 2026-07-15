@@ -1,4 +1,50 @@
 ####################################################
+# Error Handling                                   #
+####################################################
+
+# Debugging
+## Description:
+# Learn how to read error messages and use try/except.
+
+## Key Concepts:
+# - Common errors (NameError, TypeError)
+# - try/except blocks
+# - print-debugging
+
+## Code Demo:
+try:
+    val = int(input("Enter number: "))
+    print("Value is:", val)
+except ValueError:
+    print("Invalid input!")
+
+## Exercises:
+# Fix broken code snippets with bugs.
+# Write a function that divides two numbers and handles division by zero and non number inputs.
+
+def safe_divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+    except ValueError:
+        return "Please enter numbers only"    
+
+print(safe_divide(10, 0))
+
+def abs(x):
+    """ Assumes x is an int
+    Returns x if x>=0 and –x otherwise """
+    if x < -1:
+        print(x)
+        return -x
+    else:
+        print(x)
+        return x
+
+## Tips for coding: always try to debug before asking for help.
+
+####################################################
 # Classes                                          #
 ####################################################
 
@@ -129,15 +175,6 @@ student_1 = Student("Bob", 14, 7, ["Math", "Science", "English"])
 # print(my_list.name)
 
 
-## Exercises:
-# Create a class for a `BankAccount` with `deposit()` and `withdraw()` methods.
-
-# Add a print account summary method (use __str__)
-
-
-
-
-
 ####################################################
 # Inheritance                                      #
 ####################################################
@@ -199,28 +236,31 @@ class Circle(Shape):
 Rectangle(4, 2, 6).area()
 
 ####################################################
-# File I/O                                         #
+# Modules                                          #
 ####################################################
 
+# Section 4: Modules
+## Description:
+# Introduce importing and using Python’s standard library.
+
 ## Key Concepts:
-# - open(), read(), write(), close()
-# - Using `with open()` for context management
+# - import keyword
+# - Using functions from modules
+# - Popular modules: math, random, os
 
 ## Code Demo:
-# with open("data.txt", "w") as f:
-#     f.write("Hello, file!")
-
-# with open("data.txt", "r") as f:
-#     print(f.read())
+import random
+print("Random number:", random.randint(1, 10))
 
 ## Exercises:
-# Write a program that appends user input to a file.
+# Use math module to compute square root.
+import math
+print("Square root of 16:", math.sqrt(16))
+# Use random module to build a simple dice roller.
+def roll_dice():
+    return random.randint(1, 6)
 
-# Pair Programming Project:
-## Task:
-# Refactor the guessing game into a class (`GuessingGame`)
-# - Use inheritance if possible (e.g., Game → GuessingGame)
-# - Log game rounds to a file
+print("Dice roll:", roll_dice())
 
-## Time:
-# 40–50 minutes
+## Tips for Teaching:
+# Reinforce module reuse for simplifying code.
