@@ -1,18 +1,38 @@
-# Homework 3 Template: Loops
+# Homework 3 
+# Part 1: Functions & Exception Handling
 
-# TODO: Create a loop with options:
-# 1. Add Profile
-# 2. Add Hobby
-# 3. View Profile
-# 4. Edit Profile
-# 5. Exit
+# TODO: Create get_user_input(prompt) to safely take input such as a user's first name, last name and email address
+# TODO: Add calculate_age_in_months(user) that returns age * 12
+# Be sure to use exception handling in your function to catch any issues with user input
 
-# TODO: Use input() to get user choice
-# TODO: Add a while loop and if/elif blocks to handle options
+# Sample structure:
+# def get_user_input(prompt):
+#     try:
+#         return input(prompt)
+#     except:
+#         return ""
 
-# Hint: You need to add a profile first before you can view/edit a profile or add a hobby
-#       You will need some kind of data structure outside your loop to hold information
+# def view_profile(user):
+#     print(user)
+
+# Part 2: Classes
+
+# TODO: Create a class called User and initialize:
+# name, age, student, hobbies, location
+
+# TODO: Add methods:
+# view_profile(), add_hobby(), calculate_age_in_months()
 
 
-# Supplemental (we didn't get to this, will likely go over in next lecture)
-# TODO: Use list comprehension to print hobbies in uppercase
+# STARTER CODE
+
+# class User:
+#     def __init__()
+
+
+"""
+TODO: Using inheritance, create a subclass called Admin with
+      a new password parameter and a method called login.
+      Login should prompt the Admin for a password until
+      either the user exits or gets the password right.
+"""
