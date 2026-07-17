@@ -36,3 +36,13 @@ TODO: Using inheritance, create a subclass called Admin with
       Login should prompt the Admin for a password until
       either the user exits or gets the password right.
 """
+
+import random
+
+# Part 3: Modules
+# TODO: Make a random password generator!
+# Using the random library, make a function that generates a sequences of:
+# Random letters: A-Z, a-z
+# Random numbers: 0-9
+# And random symbols: %$!@#
+# Allow the user to specify the password length, and if they want special characters. (Your parameters)
